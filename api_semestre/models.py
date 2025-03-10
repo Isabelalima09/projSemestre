@@ -6,9 +6,9 @@ class CadastroFilme(models.Model):
     NomeAutor= models.CharField(max_length=30)
 
 class CadastroResenha(models.Model):
-    Comentário=models.CharField(max_length=30000)
+    Comentario=models.CharField(max_length=1000)
 
 class CadastroPerfil(models.Model):
     Nome=models.CharField(max_length=20)
     Foto=models.ImageField()
-    Bio=models.CharField(max_length=30)
+    Bio=models.CharField(max_length=50)
